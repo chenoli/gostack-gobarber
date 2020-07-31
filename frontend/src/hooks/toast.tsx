@@ -13,7 +13,7 @@ export interface ToastMessage {
   id: string;
   type?: 'success' | 'error' | 'info';
   title: string;
-  description: string;
+  description?: string;
 }
 
 const ToastContext = createContext<ToastContextData>({} as ToastContextData);
